@@ -1,0 +1,318 @@
+body{
+    background-image: url(images/pexels-keparena-2014-1708822-5151274.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    height: 150px;
+    align-items: center;
+    border-bottom: solid rgb(255, 166, 0) thick;
+    border-radius: 20px;
+}
+
+header .logo{
+    border: none;
+    margin-left: 15px;
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    font-size: 6em;
+    font-weight: bolder;
+    color: rgb(236, 64, 12);
+}
+
+header nav{
+    min-width: 200px;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: 40px;
+    gap: 30px;
+}
+
+header nav a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: none;
+    border: rgb(255, 95, 2) solid thin;
+    width: 100px;
+    height: 35px;
+    border-radius: 20px;
+    transition: 0.5s ease-in-out;
+    text-decoration: none;
+    font-size: large;
+    color: rgb(255, 103, 2);
+}
+
+header nav a:hover{
+    background-color: rgba(236, 127, 2, 0.596);
+}
+
+header nav a:active{
+    background-color: rgba(106, 106, 206, 0.671);
+}
+
+#about{
+    background-color: rgba(236, 37, 2, 0.582); 
+}
+
+#skills{
+    background-color: rgba(236, 37, 2, 0.582);
+}
+
+#projects{
+    background-color: rgba(236, 37, 2, 0.582); 
+}
+
+#exp{
+    background-color: rgba(236, 37, 2, 0.582);
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+}
+.hero{
+    background-color: rgba(0, 0, 0, 0.76);
+    width: 300px;
+    height: 500px;
+    border: none;
+    border-radius: 40px;
+    margin-left: 30px;
+    margin-top: 20px;
+    display: inline-block;
+    overflow: hidden;
+    box-shadow: 6px 9px 15px rgba(255, 166, 0, 0.801);
+}
+
+.hero img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#text{
+    width: 700px;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.37);
+    border: none;
+    border-radius: 50px;
+    color: rgb(255, 136, 0);
+    display: inline;
+    margin-top: 120px;
+    margin-left: 150px;
+    line-height: 1.3em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    transition: 0.4s ease;
+}
+
+#text:hover{
+    transform: scale(1.06);
+}
+
+#text p{
+    margin: 20px;
+}
+
+#text::first-letter{
+    font-size: 4em;
+    float: left;
+    margin-top: -13px;
+}
+
+#text::first-line{
+    font-weight: bolder;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    position: static;
+    bottom: 0px;
+    height: 100px;
+    margin-top: 30px;
+    border-top: solid rgb(212, 31, 31) thin;
+}
+
+footer a{
+    text-decoration: none;
+    font-size: larger;
+}
+
+
+
+/* skills*/
+
+#bigskillcontainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-evenly;
+    row-gap: 50px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+
+}
+
+.skillcontainers{
+    width: 250px;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: none;
+    border-radius: 20px;
+    flex-shrink: 0;
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.37);
+    transition: 0.3s;
+}
+
+.skillText{
+    width: 250px;
+    height: 200px;   
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px;
+    color: aliceblue;
+}
+
+.skillText p{
+    margin-top: 0px;
+}
+
+.skillText h2{
+    margin-bottom: 4px;
+}
+
+.skillcontainers:hover{
+    transform: scale(1.05);
+}
+
+/* projects */
+
+#projectscontainer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+    margin-top: 40px;
+    row-gap: 30px;
+}
+
+.project{
+    display: flex;
+    width: 400px;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: none;
+    border-radius: 20px;
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.37);
+    transition: 0.3s ease;
+    justify-content: center;
+}
+
+.project a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 30px;
+    background-color: rgb(255, 72, 0);
+    border-radius: 10px;
+    bottom: 0px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    flex-shrink: 0;
+}
+
+.project .projectText{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 10px;
+    justify-content: center;
+    height: fit-content;
+    color: aliceblue;
+}
+
+.project .projectText p{
+    margin-top: 0px;
+}
+
+.project .projectText h2{
+    margin-bottom: 5px;
+}
+
+.project:hover{
+    transform: translateY(-6px);
+}
+
+
+
+/* experience */
+
+#experienceContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    row-gap: 0px;
+}
+
+.experience{
+    display: inline-block;
+    width: 600px;
+    height: 200px;
+    border-left: solid 2px rgb(250, 0, 0);
+    position: relative;
+}
+
+
+.experience .smallCircle{
+    width: 20px;
+    height: 20px;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: rgb(248, 94, 5);
+    margin-left: -10px;
+    flex-shrink: 0;
+    position: absolute;
+}
+
+.experience h2{
+    display: inline-block;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight: bold;
+}
+
+.experience p{
+    margin-top: 5px;
+    font-size: large;
+}
+
+#expContents{
+    color: aliceblue;
+    display: inline-block;
+    margin-left: 30px; 
+    margin-top: 0px;
+    top: 0px;  
+    transition: 0.4s; 
+}
+
+#expContents:hover{
+    transform: scale(1.03);
+}
