@@ -100,7 +100,7 @@ section{
 
 #text{
     width: 700px;
-    height: 300px;
+    height: fit-content;
     background-color: rgba(0, 0, 0, 0.37);
     border: none;
     border-radius: 50px;
